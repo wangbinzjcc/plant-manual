@@ -1,0 +1,92 @@
+\documentclass[10pt,twoside,letterpaper]{book}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.9cm,bmargin=2.0cm,lmargin=2.8cm,rmargin=1.5cm}
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\pagestyle{fancy} %fancyhdr宏包新增的页面风格
+\fancyhf{} %清空页眉页脚
+\fancyhead[RO]{
+\raisebox{0pt}[0pt][0pt]{弄岗喀斯特季节性雨林树种---及其分布格局}\\ {\small Longgang Karst Seasonal Rain Forest Plot: Tree Species and Their Distribution Patterns}}%偶数页右
+\fancyhead[LE]{
+\raisebox{-8pt}[0pt][0pt]{
+ \includegraphics[height=0.9cm,width=0.9cm]{F:/SpeciesManual/cfrobio.png}}
+ “中国生物多样性监测网络”丛书\\} %奇数页左
+\fancyfoot[lE, RO]{\thepage}
+\renewcommand{\footrulewidth}{0.2pt}
+\title{{\LARGE 弄岗喀斯特季节性雨林}\\ 
+       {\large --- 树种及其分布格局}\\ 
+       {\LARGE Longgang Karst Seasonal Rain Forest Plot}\\ 
+       {\large Tree Species and Their Distribution Patterns}}
+\author{ 中科院广西植物研究所\\ 中科院植物研究所\\ 弄岗国家级自然保护区}
+%%%%%%%
+\begin{document}
+\begin{titlepage} 
+\thispagestyle{empty}
+\begin{center}
+\raisebox{-8pt}[0pt][0pt]{ 
+\includegraphics[height=1.6cm, width=1.6cm]{F:/SpeciesManual/cfrobio.png}}\hspace{10}                   }
+{\large “中国生物多样性监测网络”丛书\hspace{8}马克平\hspace{8}主编}{\large \par}
+\par\end{center}\\ 
+
+\vspace{25}
+
+\begin{center}
+{\Huge 广西弄岗喀斯特季节性雨林}\\ \vspace{10}
+{\LARGE------树种及其分布格局 }
+\par\end{center}{\Huge \par}{\LARGE \par}
+\begin{center}
+{\LARGE Longgang Karst Seasonal Rain Forest Plot}\\ \vspace{10}
+{\large Tree Species and their distribution Patterns}
+\par\end{center}{\LARGE \par}{\large \par}
+
+\vspace{10}
+
+\begin{center}
+{\large 中\,科\,院\,广\,西\,植\,物\,研\,究\,所}\\[1]
+{\large 中\,科\,院\,植\,物\,研\,究\,所}\\[1] 
+{\large 弄\,岗\,国\,家\,级\,自\,然\,保\,护\,区}
+\par\end{center}{\large \par}
+
+\vspace{30}
+
+\makebox[1.13\textwidth][c]{
+\begin{minipage}{26cm}
+%{\setlength{\baselineskip}{120}
+\includegraphics[height=4cm,width=4.2cm]{F:/PublBoard/c4}
+\includegraphics[height=4cm,width=4.2cm]{F:/PublBoard/c2}
+\includegraphics[height=4cm,width=4.2cm]{F:/PublBoard/c3}
+\includegraphics[height=4cm,width=4.2cm]{F:/PublBoard/c1}  
+\includegraphics[height=4cm,width=4.2cm]{F:/PublBoard/c5}
+\\[3]
+\includegraphics[bb=370bp 150bp 3080bp 2800bp,clip,height=4cm,width=4.2cm]{F:/PublBoard/a4}
+\includegraphics[bb=0bp 700bp 2400bp 2900bp,clip,height=4cm,width=4.2cm]{F:/PublBoard/2}
+\includegraphics[bb=280bp 40bp 715bp 470bp,clip,height=4cm,width=4.2cm]{F:/PublBoard/1}
+\includegraphics[bb=0bp 900bp 2200bp 2550bp,clip,height=4cm,width=4.2cm]{F:/PublBoard/55}
+\includegraphics[bb=700bp 0bp 2400bp 1960bp,clip,height=4cm,width=4.2cm]{F:/PublBoard/6}
+%\par}  
+\end{minipage}           } 
+
+\vspace{65}
+
+\begin{center}
+{\large 某某出版社\\[5] Publishing House}
+\par\end{center}{\large \par}
+\end{titlepage}
+\maketitle
+%%%  封面 end ~~~
+<<AllGraph-Run, include=F>>=
+#
+set_fil <- 'F:/SpeciesManual/'
+LGdat.IV <- read.csv(file=paste(set_fil, 'graphfile/Abu-Maxdbh-IV-Cod.csv', sep=''))
+cod_H <- read.csv(file=paste(set_fil,'graphfile/spe_cod_Hys-2012-10-26 110946.csv',sep=''))  
+out = NULL
+ n.dim <- dim(cod_H)[1] ## !!attention!
+ iiRang = 1:3
+for(ii in iiRang) {
+   out = c(out, knit_child('child-speii-wb-2012-10-30105433.Rnw',
+                           sprintf('spe-%d-graph.txt', ii)))
+}
+@
+\setcounter{page}{1}
+\Sexpr{paste(out, collapse = '\n')} 
+\end{document}

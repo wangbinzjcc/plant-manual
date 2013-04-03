@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage{ctex}
+\usepackage[landscape]{geometry}
+\geometry{verbose,tmargin=0.5cm,bmargin=0cm,lmargin=0.7cm,rmargin=0.5cm} 
+
+\begin{document} 
+\begin{center}
+\raisebox{0pt}[0pt][5pt]{
+\textbf{{\LARGE  弄岗喀斯特季节性雨林监测样地}}  } 
+\\
+\textbf{{\large Longgang Karst Seasonal Rain Forest Dynamics Plot}}  
+\par\end{center}
+\begin{minipage}[b]{9.8cm}
+{\setlength{\baselineskip}%
+{0.88\baselineskip}
+{\small
+\verb'    '弄岗喀斯特季节性雨林15公顷样地位于我国华南广西弄岗国家级自然保护区内(22.43°N，106.95°E)，是中国森林生物多样性监测网络的大型动态样地之一。弄岗大样地森林生态系统完整、地球化学背景特殊、异质性生境分化强烈，是世界少有的理想的喀斯特森林生态系统与生物多样性研究基地。\\
+\verb'    'Longgang 15-ha Karst seasonal rain forest plot is located in the Longgang National Nature Reserve of the Guangxi Province, southern China (22.43°N,106.95°E).This plot is one of the large-scale forest dynamics plots of Chinese Forest Biodiversity Monitoring Network  (CForBio). This plot contains a comprehensive foest ecosystem,is characterized by special geochemical background and high differentiation in heterogeneous microhabitats, and  is an unusual and ideal study base to investigate the karst forest ecosystems and biodiversity
+ in the world. }\par}
+\end{minipage} 
+\includegraphics[height=6.5cm,width=8.7cm]{F:/PublBoard/a7} %
+\begin{minipage}[b]{13cm}
+{\setlength{\baselineskip}%
+{0.951\baselineskip}
+{\small
+\textbf{植物个体数:} 67 556 (含分枝: 94 867)\verb' '\textbf{科:}54  \verb' '\textbf{属:}153\verb' '\textbf{种:}223\\
+\textbf{代表树种:} 蚬木、肥牛树、金丝李 \\
+\textbf{年平均气温:} 20.8 - 22.4 °C \verb' '
+\textbf{年平均降水量:} 1150 - 1550 mm \\
+\textbf{建设单位:}  广西植物研究所、中国科学院植物研究所、弄岗国家级\\自然保护区\\
+\textbf{Individuals:} 67 556 (with branch: 94 867)\\
+\textbf{Species:} 223 \textbf{Genera:} 153  \textbf{Families:} 54 \\
+\textbf{Representative tree species:}\emph{ Excentrodendron tonkinense, \\
+Cephalomappa sinensis, Garcinia paucinervis} \\
+\textbf{Mean annual temperature:} 20.8 - 22.4°C\\
+\textbf{Mean annual precipitation:} 1150 - 1550 mm\\
+\textbf{Institution:}  Guangxi Institute of Botany ; 
+ Institute of Botany, \\ Chinese Academy of Sciences ;
+  Longgang National Nature Reserve}
+\par}
+\end{minipage}   \\
+\makebox[0.34\textwidth][l]{
+\includegraphics[height=6cm,width=9cm]{F:/PublBoard/a8}  %    
+}
+\makebox[0.31\textwidth][c]{
+\includegraphics[height=5.7cm,width=8cm]{F:/PublBoard/a9}  %    
+}
+\raisebox{-3pt}[0pt][7pt]{ 
+\makebox[0.212\textwidth][l]{
+\includegraphics[height=5.8cm,width=5.8cm]{F:/PublBoard/a10}  %    
+} }
+\begin{minipage}[b]{4cm}
+{\setlength{\baselineskip}{82.5}
+\includegraphics[height=2.78cm,width=3.1cm]{F:/PublBoard/a11}  %   
+\includegraphics[height=2.78cm,width=3.1cm]{F:/PublBoard/12}  %  
+\par} 
+\end{minipage}
+\\
+\makebox[0.63\textwidth][l]{
+\begin{minipage}[c]{17.4cm}
+{\small
+{\setlength{\baselineskip}%
+{0.1\baselineskip}
+\textbf{已开展项目} 
+\begin{itemize}
+\item 2010年，使用全站仪将样地划分为1500个10m×10m小样方，记录每个样点的海拔。
+\item 2011年，样地内所有胸径≥1cm木本植物被挂牌，并记录物种名称、胸径、坐标、生长状态等；每5年复查一次。   
+\item 2012年4月，架设90个种子雨收集器 (71cm×71cm)，植物种子和凋落物每星期收集一次；设置90×5个幼苗框 (1m×1m 或 2m×2m)，每4个月调查一次。
+\item 2012年8月，样地周围布设35台红外相机，监测动物活动。
+\end{itemize}
+\textbf{Ongoing projects} 
+\begin{itemize}
+\item In 2010,the total plot had been grided into 1500 10m×10m subplots and the elevation of every subplot was recorded.
+\item In 2011, all individuals with the stems ≥1 cm DBH in the plot were tagged, identified by species name,DBH,coordinate and growing status, and  re-censused by every 5 years.    
+\item In April 2012, 90 seed traps (71cm×71cm) were built and seed rain and litterfall were investigated every week. 90×5 seedling subplots (1m×1m or 2m×2m) were set up around the seed traps and were surveyed every four months. 
+\item In August 2012, 35 infrared cameras were set up around the plot in order to monitor animal activity.
+\end{itemize}
+\par}}
+\end{minipage}  }  
+\begin{minipage}{15cm}
+{\setlength{\baselineskip}{86}
+\includegraphics[bb=280bp 40bp 715bp 470bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/1}
+\includegraphics[bb=0bp 700bp 2400bp 2900bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/2}
+\includegraphics[bb=90bp 0bp 440bp 306bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/a3} 
+\\
+\includegraphics[bb=370bp 150bp 3080bp 2800bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/a4}
+\includegraphics[bb=0bp 900bp 2200bp 2550bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/55}
+\includegraphics[bb=700bp 0bp 2400bp 1960bp,clip,height=2.9cm,width=3.3cm]{F:/PublBoard/6} \par}
+\end{minipage} 
+\end{document} 
+

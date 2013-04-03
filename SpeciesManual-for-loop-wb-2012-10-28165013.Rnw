@@ -1,0 +1,36 @@
+\documentclass[10pt,twoside,letterpaper]{book}
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2cm,lmargin=2.5cm,rmargin=1.5cm}
+%\pagestyle{plain}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} %fancyhdr宏包新增的页面风格
+\fancyhf{} %清空页眉页脚
+\fancyhead[LE]{弄岗喀斯特季节性雨林树种图册\\ Tree species atlases in Longgang karst rainsonal forest plot} %偶数页右
+\fancyhead[RO]{
+\raisebox{-8pt}[0pt][0pt]{
+ \includegraphics[height=0.9cm,width=0.9cm]{F:/SpeciesManual/cfrobio.png}}
+ “中国生物多样性检测网络”丛书\\} %奇数页左
+\fancyfoot[lE, RO]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+%%%%%%%
+\begin{document}
+<<AllGraph-Run, include=F>>=
+#
+set_fil <- 'F:/SpeciesManual/'
+LGdat.IV <- read.csv(file=paste(set_fil, 'graphfile/Abu-Maxdbh-IV-Cod.csv', sep=''))
+cod_H <- read.csv(file=paste(set_fil,'graphfile/spe_cod_Hys-2012-10-26 110946.csv',sep='')) 
+ 
+out = NULL
+ n.dim <- dim(cod_H)[1] ## !!attention!
+ iiRang = 1 : 4    
+for(ii in iiRang) {
+   out = c(out, knit_child('child-speii-wb-2012-10-28165028.Rnw',
+                           sprintf('spe-%d-graph.txt', ii)))
+}
+@
+\Sexpr{paste(out, collapse = '\n')} 
+\end{document}
